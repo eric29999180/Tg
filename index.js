@@ -8,7 +8,7 @@ export default {
           const chatId = payload.message.chat.id;
           const text = payload.message.text || "";
 
-          let reply = "Serverless 雲端回覆測試成功！";
+          let reply = "😑😑😑Serverless 雲端回覆測試成功！";
           if (text === "測") reply = "收到測試指令，連線正常。";
 
           await fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
